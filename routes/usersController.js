@@ -19,6 +19,14 @@ router.post('/', (req, res) => {
         email: req.body.email,
         adresse: req.body.adresse,
         gerant: req.body.gerant,
+        forme_juridique: {
+            id: req.body.id,
+            libelle: req.body.libelle
+          },
+          secteur_intervention: {
+            id: req.body.id,
+            libelle: req.body.libelle
+          },
         annee_experience: req.body.annee_experience
     });
   

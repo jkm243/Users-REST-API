@@ -1,63 +1,63 @@
 const mongoose = require("mongoose");
 
 const UsersModel = mongoose.model(
-  "user-api",
-  {
-    id: {
-        type: Number,
-        required: true
-    },
-    designation: {
-        type: String,
-        required: true
-    },
-    telephone: {
-        type: String,
-        required: true
-    },
-    email: {
-        type: String,
-        required: true
-    },
-    adresse: {
-        type: String,
-        required: true
-    },
-    gerant: {
-        type: String,
-        required: true
-    },
-    forme_juridique: {
-        id: {
-            type: Number,
-            // required: true
-        },
-        libelle: {
-            type: String,
-            // required: true
-        }
-    },
-    secteur_intervention:
+    "user-api",
     {
         id: {
             type: Number,
-            // required: true
+
         },
-        libelle: {
+        designation: {
             type: String,
-            // required: true
+
+        },
+        telephone: {
+            type: String,
+
+        },
+        email: {
+            type: String,
+
+        },
+        adresse: {
+            type: String,
+
+        },
+        gerant: {
+            type: String,
+
+        },
+        forme_juridique: {
+            id: {
+                type: Number,
+
+            },
+            libelle: {
+                type: String,
+
+            }
+        },
+        secteur_intervention:
+        {
+            id: {
+                type: Number,
+
+            },
+            libelle: {
+                type: String,
+
+            }
+        },
+        date_creation: {
+            type: Date,
+            default: Date.now
+        },
+        annee_experience: {
+            type: Number,
+
         }
     },
-    date_creation: {
-        type: Date,
-        default: Date.now
-    },
-    annee_experience: {
-        type: Number,
-        required: true
-    }
-  },
-  "users"
+    "users"
 );
 
 module.exports = { UsersModel };
