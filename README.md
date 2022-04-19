@@ -1,4 +1,4 @@
 # Users-REST-API
-An example of REST API
+REST API 
 
 ## Express & MongoDB
