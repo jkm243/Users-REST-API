@@ -11,4 +11,21 @@ router.get('/', (req, res) => {
     })
   });
 
-  module.exports = router;
+router.post('/', (req, res) => {
+    const newRecord = new UsersModel({
+        id: req.body.id,
+        designation: req.body.designation,
+        telephone: req.body.telephone,
+        email: req.body.email,
+        adresse: req.body.adresse,
+        gerant: req.body.gerant,
+        annee_experience: req.body.annee_experience
+    });
+  
+newRecord.save((err, docs) => {
+      if (!err) res.send(docs);
+      else console.log('Error creating new data : ' + err);
+    })
+  });
+
+module.exports = router;

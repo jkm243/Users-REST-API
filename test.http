@@ -1,0 +1,16 @@
+# GET http://localhost:5500
+
+ POST http://localhost:5500 HTTP/1.1
+
+ content-type:application/json
+
+ {
+   "id":2,
+   "designation": "test Prestataire",
+   "telephone": "test 243827485588",
+   "email": "test email@email.com",
+   "adresse": "test Kinshasa-Gombe",
+   "gerant": "test Gerant A",
+   "annee_experience": 2,
+ }
+

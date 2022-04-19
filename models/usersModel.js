@@ -30,22 +30,22 @@ const UsersModel = mongoose.model(
     forme_juridique: {
         id: {
             type: Number,
-            required: true
+            // required: true
         },
         libelle: {
             type: String,
-            required: true
+            // required: true
         }
     },
     secteur_intervention:
     {
         id: {
             type: Number,
-            required: true
+            // required: true
         },
         libelle: {
             type: String,
-            required: true
+            // required: true
         }
     },
     date_creation: {
