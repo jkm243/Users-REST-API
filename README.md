@@ -9,4 +9,4 @@ REST API
 
 MIT
 
-**Free Software, Hell Yeah!**
+**Mbote Yeah!**
