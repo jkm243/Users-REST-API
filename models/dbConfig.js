@@ -2,7 +2,7 @@
 const mongoose = require('mongoose')
 
 mongoose.connect(
-    "mongodb+srv://admin:admin@cluster0.mup5h.mongodb.net/user-api",
+    "mongodb+srv://admin:<password>@cluster0.mup5h.mongodb.net/test",
     {useNewUrlParser: true, useUnifiedTopology: true},
     (err)=>{
         if(!err) console.log("Mongo DB connected")
